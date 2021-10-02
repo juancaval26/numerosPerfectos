@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Numeros Perfectos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <form method="post" id="">
+      <div class="container">
+        <div class="text-center">
+          <h1>Determinar si un numero es Perfecto</h1>
+            <label for=""><strong>Explicacion</strong></label>
+              <p>Un número perfecto es aquél que es igual a la suma de sus divisores(1 + 2 + 3) = 6, exceptuando él mismo(6) por lo tanto 6 es un número perfecto</p><br>
+          <label><strong>EJEMPLO:</strong></label><br>
+          <p>Ingreso el numero 6 el programa valida sus divisores que son(1, 2 y 3) y su resultado es 6 por lo tanto muesta en pantalla que dicho numero es perfecto </p><br>
+          <label for=""><strong>Nota</strong></label>
+          <p>los divisores que no cumplen con la condicion son en este caso (4,5) no se tienen en cuenta</p>
+          <label> <strong>RESTRICCIONES</strong>
+              <ul>
+                <li>Solo Se Permiten Numeros Enteros</li>
+                <li>Se permite ingresar numeros de 1 a 8 digitos</li>
+                <li>No se permite el numero cero</li>
+                <li>no se permiten numeros negativos</li>
+                <li>No se permiten caracteres</li>
+              </ul>
+            </label>
+          <div class="form-group">
+            <label for=""class="text-success">Ingrese Un Numero *</label>
+            <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
+          </div>
+          <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+    <form method="post" id="">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mt-5">Numeros Perfectos Por Lista</h2>
+          <label><strong>EJEMPLO: </strong>
+            <ul>
+              <li>Ingreso el numero 5</li>
+              <li>el programa genera los numeros perfectos y muestra 5 de ellosIngreso el numero 5</li>
+            </ul>
+          </label>
+          <br>
+          <label><strong>RESTRICCIONES: </strong>
+          <ul>
+            <li>Solo Se Permiten Numeros Enteros</li>
+            <li>Solo permite ingresar numeros del 1 al 8 (la espera para numeros mayores puede tomar varios segundos/minutos)</li>
+            <li>si se desea conocer mas de 8 numeros perfectos, lea la lista de numeros perfectos para mas detalles</li>
+            <li>No se permite el numero cero</li>
+            <li>no se permiten numeros negativos</li>
+            <li>No se permiten caracteres</li>
+          </ul>
+          </label>
+          <br>
+          <b>los numeros estan separados por coma</b>
+          <div class="form-group">
+            <label for=""class="text-success mt-4">Ingrese Un Numero *</label>
+            <input type="number" class="form-control my-3" id="nPerfecto" name="numero" placeholder="Numero">
+            <a href="http://www.vaxasoftware.com/doc_edu/mat/numperfe_esp.pdf" class="btn btn-info" target="_blank">lista numeros perfectos</a>
+            <a href="https://miprofe.com/numeros-perfectos" class="btn btn-warning" target="_blank">Sitio Web Apoyo</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="mostrar">mostrar</button>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+    <form method="post" id="">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="mt-5">Numeros Perfectos Por Rango</h3>
+          <label><strong>EJEMPLO: </strong>
+          <p>Ingreso el numero 100</p>
+          <p>el programa genera los numeros perfectos que encuentre del 1 al 100</p>
+          </label>
+          <br>
+          <label><strong>RESTRICCIONES: </strong>
+          <ul>
+            <li>Solo Se Permiten Numeros Enteros</li>
+            <li>Se permite ingresar numeros de 1 a 19 digitos</li>
+            <li>No se permite el numero cero</li>
+            <li>No se permiten numeros negativos</li>
+            <li>No se permiten caracteres</li>
+          </ul>
+          </label>
+          <div class="form-group">
+            <label for=""class="text-success">Ingrese Un Numero *</label>
+            <input type="number" class="form-control my-3" id="nPerfectoRango" name="numero" placeholder="Numero">
+          </div>
+          <button type="submit" class="btn btn-primary" id="mostrarRango">mostrar</button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <!-- red de distribucion de contenido
+      contiene copias de datos almacenadas en una red servidores externos
+      con el fin de un uso rapido y eficiente-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/numeroPerfecto.js"></script>
+  <script src="js/numerosPerfectosLista.js"></script>
+  <script src="js/numerosPerfectosRango.js"></script>
+  <script src="js/llamadas.js"></script>
+</html>
